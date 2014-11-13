@@ -44,7 +44,7 @@ get_header(); ?>
 
 
 
-				<?php get_template_part( 'content', 'let-us-know' ); ?>
+				<?php get_template_part( 'content', 'general' ); ?>
 
 
 

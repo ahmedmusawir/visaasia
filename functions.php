@@ -1801,3 +1801,16 @@ if(1 != $pages)
     }
 }
 
+/*===================================================
+=            Exclude FAQ from Blog Index            =
+===================================================*/
+function exclude_faqs( $query ) {
+    if ( !$query->is_category('faq') && $query->is_main_query() ) {
+        $query->set('cat', '-4');
+    }
+}
+add_action( 'pre_get_posts', 'exclude_faqs' );
+
+
+/*-----  End of Exclude FAQ from Blog Index  ------*/
+
