@@ -116,7 +116,7 @@
 
 			<span class="cat-links">
 
-				<?php printf( __( 'Posted in %1$s', 'zerif-lite' ), $categories_list ); ?>
+				<?php //printf( __( 'Posted in %1$s', 'zerif-lite' ), $categories_list ); ?>
 
 			</span>
 
