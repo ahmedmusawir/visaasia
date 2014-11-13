@@ -17,8 +17,11 @@
 get_header(); ?>
 
 <div class="clear"></div>
-
 </header> <!-- / END HOME SECTION  -->
+
+
+
+
 
 
 
@@ -26,15 +29,23 @@ get_header(); ?>
 
 <div class="container">
 
-<h2>New FAQ Template</h2>
+<!-- <h2>New FAQ Template</h2> -->
 
 <div class="content-left-wrap col-md-9">
 
+		<header class="entry-header">
 
+			<h1 class="well"><?php the_title(); ?></h1>
+
+		</header><!-- .entry-header -->
 
 	<div id="primary" class="content-area">
 
+
+
 		<main id="main" class="site-main" role="main">
+
+
 
 		<?php 
 		/*======================================================================
@@ -42,7 +53,7 @@ get_header(); ?>
 		======================================================================*/
 
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-		echo $paged;
+		// echo $paged;
 
 		$args = array(
 			'posts_per_page' => 3,
@@ -91,8 +102,8 @@ get_header(); ?>
 
 			<nav>
 			    <ul>
-			        <li><?php previous_posts_link( '&laquo; PREV', $query->max_num_pages) ?></li> 
-			        <li><?php next_posts_link( 'NEXT &raquo;', $query->max_num_pages) ?></li>
+			        <!-- <li><?php //previous_posts_link( '&laquo; PREV', $query->max_num_pages) ?></li>  -->
+			        <!-- <li><?php //next_posts_link( 'NEXT &raquo;', $query->max_num_pages) ?></li> -->
 			    </ul>
 			</nav>
 
@@ -104,7 +115,7 @@ get_header(); ?>
 
 				
 
-			<?php zerif_paging_nav(); ?>
+			<?php //zerif_paging_nav(); ?>
 
 			<?php wp_reset_query(); ?>
 

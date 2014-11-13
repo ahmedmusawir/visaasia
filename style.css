@@ -2593,8 +2593,8 @@ width: -webkit-calc(100% / 4);
 article.hentry{
 	float: left;
 	width: 100%;
-	margin-bottom: 30px;
-	padding-bottom: 30px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 article.sticky{

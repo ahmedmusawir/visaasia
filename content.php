@@ -50,7 +50,7 @@
 
 		<div class="entry-meta">
 
-			<?php zerif_posted_on(); ?>
+			<?php //zerif_posted_on(); ?>
 
 		</div><!-- .entry-meta -->
 
@@ -73,10 +73,12 @@
 	<div class="entry-content">
 
 		<?php 
+		global $more;
+		$more = 0;
 
-			the_excerpt()
+			//the_excerpt()
 
-			//the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'zerif-lite' ) ); 
+			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'zerif-lite' ) ); 
 
 		?>
 
